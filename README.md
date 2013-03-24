@@ -1,5 +1,5 @@
 ### Forked ROS Node: household_objects_database
-<br>
+
 This is a fork of the ROS Fuerte release of household_objects_database: <br>
 https://code.ros.org/svn/wg-ros-pkg/stacks/object_manipulation/branches/0.6-branch/household_objects_database/
 
