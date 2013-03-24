@@ -524,9 +524,9 @@ public:
     database_ = new ObjectsDatabase(database_host, database_port, database_user, database_pass, database_name);
     if (!database_->isConnected())
     {
-      ROS_ERROR("ObjectsDatabaseNode: failed to open model database on host "
-		"%s, port %s, user %s with password %s, database %s. Unable to do grasp "
-		"planning on database recognized objects. Exiting.",
+      ROS_WARN("objects_database_node: Failed to open model database on host "
+	       "%s, port %s, user %s with password %s, database %s. \n"
+               "Models will not be fitted to clusters. Unable to use grasps for recognized objects. ",
 		database_host.c_str(), database_port.c_str(), 
 		database_user.c_str(), database_pass.c_str(), database_name.c_str());
       delete database_; database_ = NULL;
